@@ -5,14 +5,12 @@ with open("README.md", "r", encoding="utf-8") as file:
 
 setup(
     name="getgeo-python",
-    version="1.0.0",
+    version="1.1.0",
     description="A python wrapper for the API provided by getgeoapi.com",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Loisa Kitakaya",
     author_email="kitakayaloisa@gmail.com",
-    maintainer="Loisa Kitakaya",
-    maintainer_email="kitakayaloisa@gmail.com",
     url="https://github.com/LoisaKitakaya/getgeo-python",
     project_urls={
         "Bug Tracker": "https://github.com/LoisaKitakaya/getgeo-python/issues",
