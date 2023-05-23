@@ -8,12 +8,16 @@ setup(
     version="1.0.0",
     description="A python wrapper for the API provided by getgeoapi.com",
     long_description=long_description,
-    long_description_content_type = "text/markdown",
+    long_description_content_type="text/markdown",
     author="Loisa Kitakaya",
     author_email="kitakayaloisa@gmail.com",
     maintainer="Loisa Kitakaya",
     maintainer_email="kitakayaloisa@gmail.com",
     url="https://github.com/LoisaKitakaya/getgeo-python",
+    project_urls={
+        "Bug Tracker": "https://github.com/LoisaKitakaya/getgeo-python/issues",
+        "Documentation": "https://github.com/LoisaKitakaya/getgeo-python#readme",
+    },
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -25,4 +29,5 @@ setup(
     requires=[
         "requests>=2.30.0",
     ],
+    python_requires=">=3.6",
 )
