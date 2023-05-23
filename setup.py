@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("/docs/getgeo-python.md", "r", encoding="utf-8") as file:
+with open("README.md", "r", encoding="utf-8") as file:
     long_description = file.read()
 
 setup(
@@ -20,7 +20,7 @@ setup(
     },
     packages=find_packages(),
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
