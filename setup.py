@@ -1,16 +1,28 @@
 from setuptools import setup, find_packages
 
+with open("/docs/getgeo-python.md", "r", encoding="utf-8") as file:
+    long_description = file.read()
+
 setup(
     name="getgeo-python",
     version="1.0.0",
-    description="",
-    long_description="",
-    author="",
-    author_email="",
-    maintainer="",
-    maintainer_email="",
-    url="",
+    description="A python wrapper for the API provided by getgeoapi.com",
+    long_description=long_description,
+    long_description_content_type = "text/markdown",
+    author="Loisa Kitakaya",
+    author_email="kitakayaloisa@gmail.com",
+    maintainer="Loisa Kitakaya",
+    maintainer_email="kitakayaloisa@gmail.com",
+    url="https://github.com/LoisaKitakaya/getgeo-python",
     packages=find_packages(),
-    classifiers=[],
-    requires=[],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    requires=[
+        "requests>=2.30.0",
+    ],
 )
